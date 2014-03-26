@@ -1,9 +1,7 @@
-<meta charset="utf-8">
+<meta charset="utf-8"> <!-- Ezt csak azért, hogy olvasható legyen tesztelésnél -->
 <?php
-
 	function randomkartya(){
-		$rand = rand(1,14);
-		switch ($rand) {
+		switch (rand(1,14)) {
 			case '1':
 				echo "Egyet iszol.";
 				break;
