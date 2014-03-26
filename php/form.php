@@ -10,7 +10,7 @@
         }
         for (i=0;i<number;i++){
             // Input előtti szöveg kiíratása
-            container.appendChild(document.createTextNode((i+1) + ". Játékos"))
+            container.appendChild(document.createTextNode((i+1) + ". Játékos neve: "))
             // Az input elem definiálása
             var input = document.createElement("input");
             input.type = "text";
@@ -27,7 +27,10 @@
     }
 </script>
 <div align="center">
+    <br>
 	Játékosok száma <input type="text" id="jatekos" name="jatekos" value=""><br />
+    <br>
 	<a href="#" onclick="jatekosADD()">Tovább</a>
+    <br>
 	<form id="urlap" name="jatekosok" method="post" action="index.php?oldal=asztal"/>
 </div>
