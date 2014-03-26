@@ -61,7 +61,10 @@
 	function soros(){
 		var n = i%players;
 		if (n > 0) {;
-			document.getElementById("jatekos" + (n-1) + "").innerHTML = " ";;
+			document.getElementById("jatekos" + (n-1) + "").innerHTML = " ";
+		}
+		if (n == 0 && i != 0) {
+			document.getElementById("jatekos" + (players-1) + "").innerHTML = " ";
 		}
 		document.getElementById("jatekos" + n + "").innerHTML = " DEALER "+n+" ";
 		i++;
