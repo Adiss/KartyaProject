@@ -2,4 +2,4 @@
 ## Kártya Project ##
 ####################
 
-- Már be lehet ültetni az embereket az asztalhoz :D
+- Kipróbálható: http://experiment-team.hu/kartyaproject/index.php
