@@ -5,9 +5,14 @@
 		<link rel="stylesheet" type="text/css" href="css/master.css">
 		<!--<link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>-->
 		<link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
+		<script>
+			function goBack(){
+				window.history.back()
+			}
+		</script>
 	</head>
 	<body>
-		<h1 class="font"><a href="index.php">Kártya Project v0.1</a></h1>
+		<h1 class="font"><a href="index.php">Kártya Project v1.0</a></h1>
 		<?php
 
 			// Az oldal tartalmának kiválasztása
@@ -19,6 +24,9 @@
 				case 'urlap':
 					require("form.php");
 					break;
+				case 'szabalyok':
+					require("szabalyok.html");
+					break;
 				default:
 					echo "<div align=\"center\"><b>HIBA!</b><br>Nincs ilyen oldal!</div>";
 					break;
@@ -29,7 +37,13 @@
 	<footer>
 		<div align="center">
 			<br>
-			<font size="2">&copy; Jakab Ádám</font>
+			<?php
+				if ($oldal == "szabalyok") {
+					echo '<a onclick="goBack();">Vissza</a><br><font size="2">&copy; Jakab Ádám</font>';
+				} else {
+					echo '<font size="2">&copy; Jakab Ádám</font> | <font size="2"><a href="index.php?oldal=szabalyok">Szabályok</a></font>';
+				}
+			?>
 			<br>
 		</div>
 	</footer>
