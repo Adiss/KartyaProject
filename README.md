@@ -2,4 +2,4 @@
 ## Kártya Project ##
 ####################
 
-- Ide nem tudok mit írni, de azért legyen valami xD
+- Már be lehet ültetni az embereket az asztalhoz :D
