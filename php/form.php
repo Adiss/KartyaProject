@@ -26,7 +26,7 @@
         container.appendChild(submit);
     }
 </script>
-<div align="center">
+<div align="center" class="formed_table">
     <br>
 	Játékosok száma <input type="text" id="jatekos" name="jatekos" value=""><br />
     <br>
