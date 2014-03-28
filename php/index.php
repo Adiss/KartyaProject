@@ -12,7 +12,7 @@
 		</script>
 	</head>
 	<body>
-		<h1 class="font"><a href="index.php">Kártya Project v1.0</a></h1>
+		<h1 class="font"><a href="index.php">Kártya Project</a></h1>
 		<?php
 
 			// Az oldal tartalmának kiválasztása
