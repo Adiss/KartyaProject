@@ -10,6 +10,7 @@ var dama = 0;
 var asz = 0;
 var tmp_n_dama = 0;
 var tmp_n_asz = 0;
+var tmp_n = 0;
 
 var pakli_szamlalo = 52;
 var pakli = [
@@ -101,6 +102,7 @@ function nullaz(){
 			pakli[j][i] = 1;
 		}
 	}
+	document.getElementById("jatekos" + tmp_n + "").innerHTML = "";
 	document.getElementById("asz" + tmp_n_asz + "").innerHTML = " ";
 	document.getElementById("dama" + tmp_n_dama + "").innerHTML = " ";
 	document.getElementById("lapok").innerHTML = "Nem volt még lap húzva!";
@@ -112,8 +114,11 @@ function soros(){
 	var n = i%players;
 	if (pakli_szamlalo == 0) {
 		document.getElementById("kartyahuzas").innerHTML = "<a href='#' onclick='nullaz();'>Új pakli</a>";
-		document.getElementById("jatekos" + (players-1) + "").innerHTML = " ";
+		document.getElementById("jatekos" + (n-1) + "").innerHTML = " ";
 		document.getElementById("jatekos" + n + "").innerHTML = " <img src='images/beer-icon.png'> ";
+		tmp_n = n;
+		i=0;
+
 	} else {
 		if (n > 0) {;
 			document.getElementById("jatekos" + (n-1) + "").innerHTML = " ";
