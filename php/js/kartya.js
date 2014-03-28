@@ -95,12 +95,13 @@ function randomkartya(){
 	}
 }
 
-//Pakli nullázása
+//Új kör
 function nullaz(){
+	i=0;
 	pakli_szamlalo = 52;
-	for  (var i = 0; i <= 3; i++) {
+	for  (var h = 0; h <= 3; h++) {
 		for (var j = 0; j <= 12; j++) {
-			pakli[j][i] = 1;
+			pakli[j][h] = 1;
 		}
 	}
 	document.getElementById("jatekos" + (players-1) + "").innerHTML = " ";
@@ -111,16 +112,27 @@ function nullaz(){
 	document.getElementById("kartyahuzas").innerHTML = '<a href="#" onclick="randomkartya(); soros();">Kártya húzás</a>';
 }
 
+//Új pakli
+function pluszpakli(){
+	i = tmp_n + 1;
+	pakli_szamlalo = 52;
+	for  (var k = 0; k <= 3; k++) {
+		for (var j = 0; j <= 12; j++) {
+			pakli[j][k] = 1;
+		}
+	}
+	document.getElementById("lapok").innerHTML = "Pakliban maradt lapok: 52";
+	document.getElementById("kartyahuzas").innerHTML = '<a href="#" onclick="randomkartya(); soros();">Kártya húzás</a>';
+}
+
 // Sör körbeadása
 function soros(){
 	var n = i%players;
 	if (pakli_szamlalo == 0) {
-		document.getElementById("kartyahuzas").innerHTML = "<a href='#' onclick='nullaz();'>Új pakli</a>";
+		document.getElementById("kartyahuzas").innerHTML = "<a href='#' onclick='nullaz();'>Új kör</a> | <a href='#' onclick='pluszpakli();'>+1 Pakli</a>";
 		document.getElementById("jatekos" + (n-1) + "").innerHTML = " ";
 		document.getElementById("jatekos" + n + "").innerHTML = " <img src='images/beer-icon.png'> ";
 		tmp_n = n;
-		i=0;
-
 	} else {
 		if (n > 0) {;
 			document.getElementById("jatekos" + (n-1) + "").innerHTML = " ";
