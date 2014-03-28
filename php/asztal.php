@@ -35,7 +35,7 @@
 	</tr>
 </table>
 <br>
-<table align="center" bgcolor="brown" width="200" height="100">
+<table align="center" bgcolor="brown" width="300px" height="100px">
 	<tr>
 		<td id="lapok" height="65px" align="center">Nem volt még lap húzva!</td>
 	</tr>

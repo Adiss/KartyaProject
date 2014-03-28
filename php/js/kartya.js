@@ -46,7 +46,7 @@ function randomkartya(){
 		} else {
 			pakli[randomnumber-1][randomchar-1] = 0;
 			pakli_szamlalo--;
-		}
+		
 
 		switch(randomchar){
 		case 1:
@@ -92,10 +92,11 @@ function randomkartya(){
 			}
 		}
 	}
+	}
 }
 
+//Pakli nullázása
 function nullaz(){
-	//Pakli nullazasa
 	pakli_szamlalo = 52;
 	for  (var i = 0; i <= 3; i++) {
 		for (var j = 0; j <= 12; j++) {
