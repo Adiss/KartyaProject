@@ -11,11 +11,34 @@ var asz = 0;
 var tmp_n_dama = 0;
 var tmp_n_asz = 0;
 
+var pakli = [
+	[1,1,1,1],
+	[1,1,1,1],
+	[1,1,1,1],
+	[1,1,1,1],
+	[1,1,1,1],
+	[1,1,1,1],
+	[1,1,1,1],
+	[1,1,1,1],
+	[1,1,1,1],
+	[1,1,1,1],
+	[1,1,1,1],
+	[1,1,1,1],
+	[1,1,1,1]
+];
+
 // Random kártya kidobása
 function randomkartya(){
 	var randomnumber = Math.floor((Math.random()*13)+1);
 	var randomchar = Math.floor((Math.random()*4)+1);
 	var n = i%players;
+
+	// Kihúzott kártya kivétele a pakliból
+	if (pakli[randomchar][randomnumber] == 0) {
+		randomkartya();
+	} else {
+		pakli[randomchar][randomnumber] = 0;
+	};
 
 	switch(randomchar){
 	case 1:
@@ -33,7 +56,7 @@ function randomkartya(){
 	}
 
 	// Kártyahúzás
-	document.getElementById("lapok").innerHTML = "<img src='images/kartya/"+ randomnumber + randomchar +".gif'>";
+	document.getElementById("lapok").innerHTML = "<img src='images/kartya/"+ randomnumber + randomchar +".gif'>" ;
 
 	// Dáma cserélgetése
 	if (randomnumber == 12) {
