@@ -3,8 +3,8 @@
 		<title>Kártya project</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/master.css">
-		<!--<link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>-->
-		<link href='http://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
+		<!--<link href='http://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>-->
 		<script>
 			function goBack(){
 				window.history.back()

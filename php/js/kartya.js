@@ -103,6 +103,7 @@ function nullaz(){
 			pakli[j][i] = 1;
 		}
 	}
+	document.getElementById("jatekos" + (players-1) + "").innerHTML = " ";
 	document.getElementById("jatekos" + tmp_n + "").innerHTML = "";
 	document.getElementById("asz" + tmp_n_asz + "").innerHTML = " ";
 	document.getElementById("dama" + tmp_n_dama + "").innerHTML = " ";
