@@ -40,7 +40,7 @@
 		<td id="lapok" height="65px" align="center">Nem volt még lap húzva!</td>
 	</tr>
 	<tr>
-		<td align="center">
+		<td id="kartyahuzas" align="center">
 			<a href="#" onclick="randomkartya(); soros();">Kártya húzás</a>
 		</td>
 	</tr>
