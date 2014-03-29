@@ -6,7 +6,7 @@
 		<link href="css/master_mobile.css" rel="stylesheet" type="text/css"> <!-- MOBILE -->
 		<link href="css/boilerplate.css" rel="stylesheet" type="text/css"> <!-- MOBILE -->
 		<link rel="stylesheet" type="text/css" href="css/master.css">
-		<link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Hammersmith+One' rel='stylesheet' type='text/css'>
 		<!--<link href='http://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>-->
 		<script>
 			function goBack(){
