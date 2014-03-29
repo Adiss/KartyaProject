@@ -135,9 +135,8 @@ table tr:hover td {
 	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
 }
 .formed_table_szabaly{
-	width: 800px;
 	color:#666;
-	font-size:20px;
+
 	text-shadow: 1px 1px 0px #fff;
 	background:#eaebec;
 	margin-left: auto;
@@ -156,7 +155,6 @@ table tr:hover td {
 	padding:21px 25px 22px 25px;
 	border-top:1px solid #fafafa;
 	border-bottom:1px solid #e0e0e0;
-
 	background: #ededed;
 	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
 	background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
