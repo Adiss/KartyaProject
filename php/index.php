@@ -2,6 +2,9 @@
 	<head>
 		<title>Kártya project</title>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/master_mobile.css" rel="stylesheet" type="text/css"> <!-- MOBILE -->
+		<link href="css/boilerplate.css" rel="stylesheet" type="text/css"> <!-- MOBILE -->
 		<link rel="stylesheet" type="text/css" href="css/master.css">
 		<link href='http://fonts.googleapis.com/css?family=The+Girl+Next+Door' rel='stylesheet' type='text/css'>
 		<!--<link href='http://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>-->
@@ -10,8 +13,10 @@
 				window.history.back()
 			}
 		</script>
+		<script src="js/respond.min.js"></script>
 	</head>
 	<body>
+		<div class="gridContainer clearfix">
 		<h1 class="font"><a href="index.php">Kártya Project</a></h1>
 		<?php
 
@@ -33,6 +38,7 @@
 			}
 
 		?>
+		</div>
 	</body>
 	<footer>
 		<div align="center">

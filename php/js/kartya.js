@@ -65,7 +65,7 @@ function randomkartya(){
 		}
 
 		/* Kártyahúzás */
-		document.getElementById("lapok").innerHTML = "<img src='images/kartya/"+ randomnumber + randomchar +".gif'><br>Pakliban maradt lapok: "+pakli_szamlalo;
+		document.getElementById("lapok").innerHTML = "<img src='images/kartya/"+ randomnumber + randomchar +".gif'><br>Pakli: "+pakli_szamlalo+" lap";
 
 		/* Ha dáma lett húzva bemegy az első IF-be, ott ellenőrzi, hogy volt-e már dáma húzva. 
 		   Ha volt, akkor az előző játékostol elveszi, és az új kapja meg.

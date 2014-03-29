@@ -20,10 +20,13 @@
             container.appendChild(document.createElement("br"));
         }
         // A submit elem létrehozása
+        container.appendChild(document.createElement("br"));
         var submit = document.createElement("input");
         submit.type = "submit";
         submit.value = "Kész"
         container.appendChild(submit);
+        container.appendChild(document.createElement("br"));
+        container.appendChild(document.createElement("br"));
     }
 </script>
 <div align="center" class="formed_table">
@@ -31,6 +34,6 @@
 	Játékosok száma <input type="text" id="jatekos" name="jatekos" value=""><br />
     <br>
 	<a href="#" onclick="jatekosADD()">Tovább</a>
-    <br>
+    <br><br>
 	<form id="urlap" name="jatekosok" method="post" action="index.php?oldal=asztal"/>
 </div>
