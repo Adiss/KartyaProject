@@ -28,7 +28,6 @@ table a:hover {
 }
 table {
 	color:#666;
-	font-size:20px;
 	text-shadow: 1px 1px 0px #fff;
 	background:#eaebec;
 	margin-left: auto;
@@ -44,7 +43,7 @@ table {
 	box-shadow: 0 1px 2px #d1d1d1;
 }
 table th {
-	padding:21px 25px 22px 25px;
+	padding:11px 15px 12px 15px;
 	border-top:1px solid #fafafa;
 	border-bottom:1px solid #e0e0e0;
 
@@ -68,15 +67,15 @@ table tr:first-child th:last-child {
 }
 table tr {
 	text-align: center;
-	padding-left:20px;
+	padding-left:10px;
 }
 table td:first-child {
 	text-align: center;
-	padding-left:20px;
+	padding-left:10px;
 	border-left: 0;
 }
 table td {
-	padding:18px;
+	padding:8px;
 	border-top: 1px solid #ffffff;
 	border-bottom:1px solid #e0e0e0;
 	border-left: 1px solid #e0e0e0;

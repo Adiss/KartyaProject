@@ -35,13 +35,6 @@ img, object, embed, video {
 	padding-left: 1.82%;
 	padding-right: 1.82%;
 }
-#LayoutDiv1 {
-	clear: both;
-	float: left;
-	margin-left: 0;
-	width: 100%;
-	display: block;
-}
 
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
