@@ -1,11 +1,12 @@
-<table align="center">
+<table align="center" width="100%">
 	<tr>
 		<?php
 			// Játékosok száma
 			$jatekosok = count($_POST);
+			$td_width = 100/$jatekosok;
 			// Játékosok asztalhoz ültetése
 			for($i = 0; $i<$jatekosok; $i++){
-				echo '<th width="55px">'.$_POST["jatekos".$i.""].'</th>';
+				echo '<th width="'.$td_width.'%">'.$_POST["jatekos".$i.""].'</th>';
 			}
 		?>
 	</tr>
@@ -13,7 +14,7 @@
 		<?php
 			// Sör
 			for($i = 0; $i<$jatekosok; $i++){
-				echo '<td width="55px" height="90px" id="jatekos'.$i.'"></td>';
+				echo '<td width="'.$td_width.'%" height="90px" id="jatekos'.$i.'"></td>';
 			}
 		?>
 	</tr>
@@ -21,7 +22,7 @@
 		<?php
 			// Dáma
 			for($i = 0; $i<$jatekosok; $i++){
-				echo '<td width="55px" height="65px" id="dama'.$i.'" align="center"></td>';
+				echo '<td width="'.$td_width.'%" height="65px" id="dama'.$i.'" align="center"></td>';
 			}
 		?>
 	</tr>
@@ -29,7 +30,7 @@
 		<?php
 			// Király
 			for($i = 0; $i<$jatekosok; $i++){
-				echo '<td width="55px" height="65px" id="asz'.$i.'"></td>';
+				echo '<td width="'.$td_width.'%" height="65px" id="asz'.$i.'"></td>';
 			}
 		?>
 	</tr>
